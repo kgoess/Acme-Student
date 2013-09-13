@@ -28,5 +28,14 @@ my $susan = Acme::Student->new(
 is $susan{name}, 'susan';  
 
 is_deeply $susan->get_courses, [ 'Econ 101', 'Buddhism 300', 'Ontology Seminar' ];
+#   Failed test at t/Acme-Student.t line 30.
+#     Structures begin differing at:
+#          $got = 'Econ 101'
+#     $expected = ARRAY(0xce1380)
+
 
 is $susan->get_course_for_period( 2 ), 'Ontology Seminar';
+#   Failed test at t/Acme-Student.t line 37.
+#          got: undef
+#     expected: 'Ontology Seminar'
+

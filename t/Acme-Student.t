@@ -6,7 +6,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 1;
+use Test::More tests => 4;
 use Data::Dump qw/dump/;
 
 BEGIN { use_ok('Acme::Student') };

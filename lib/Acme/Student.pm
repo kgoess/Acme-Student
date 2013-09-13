@@ -17,7 +17,7 @@ This is an object representing a student.  Two members are 'name' and 'courses'.
 
 package Acme::Student;
 
-use 5.014002;
+use 5.10.0;
 use strict;
 use warnings;
 
@@ -61,9 +61,9 @@ the course in the fourth slot (base zero).
 sub get_course_for_period {
 	my ($self, $period) = @_;
 
-	my @courses = $self->{courses};
+	my $courses = $self->{courses};
 
-	return $courses[$period];
+	return $courses->[$period];
 }
 
 
